@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Mynerve&family=Oswald:wght@400;700&display=swap');
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFE3;
+  --foreground: #723480;
 }
 
 @theme inline {
@@ -14,8 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FFFFE3;
+    --foreground: #723480;
   }
 }
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Assistant, Mynerve, Oswald } from "next/font/google";
 import "./globals.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,24 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const assistant = Assistant({
+  variable: "--font-assistant",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const mynerve = Mynerve({
+  variable: "--font-mynerve",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +45,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${assistant.variable} ${mynerve.variable} ${oswald.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
