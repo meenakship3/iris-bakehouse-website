@@ -11,9 +11,9 @@ export default {
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],
-        assistant: ["var(--font-assistant)"],
-        accent: ["var(--font-mynerve)"],
-        oswald: ["var(--font-oswald)"],
+        assistant: ["var(--font-assistant)"], // font-body
+        accent: ["var(--font-mynerve)"], // font-accent
+        oswald: ["var(--font-oswald)"], // font-heading
       },
     },
   }

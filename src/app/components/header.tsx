@@ -10,9 +10,8 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { name: "ORDER", href: "/" },
-  { name: "ABOUT", href: "/about" },
-  { name: "CONTACT", href: "/contact" },
+  { name: "ORDER", href: "#cookies" },
+  { name: "CONTACT US", href: "/contact" },
 ];
 
 const Header: React.FC = () => {
