@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iris Bakehouse Online Shop
 
-## Getting Started
+This is a mobile-first website designed to showcase our products and enable online ordering and local delivery. This project is a work in progress and is being built as the foundation for a real business I hope to launch in the future. 
 
-First, run the development server:
+---
+## Screenshots
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** Custom React components (Header, Footer, CookieCard, etc.)
+- **Icons:** SVG and [react-icons](https://react-icons.github.io/react-icons/)
+- **State Management:** React state (no global state yet)
+- **Image Handling:** Static assets in `/public/images/` (Next.js `<Image />` planned)
+- **Linting:** ESLint
+- **Other:** Mobile-first responsive design, semantic HTML, and accessibility best practices (in progress)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Clean, minimalist, and professional design with custom branding
+- Responsive layout for mobile, tablet, and desktop
+- Modular, reusable React components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Current Status
 
-## Deploy on Vercel
+**This project is a work in progress.**  
+- Core layout and product display are implemented.
+- Navigation, header, and footer are responsive and branded.
+- Accessibility, SEO, and performance optimisations are ongoing.
+- E-commerce/order flow, contact form, and admin features are planned for future development.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Roadmap
+
+- [ ] Contact page
+- [ ] Order/cart flow (mock/demo)
+- [ ] Accessibility improvements (semantic HTML, alt text, keyboard navigation)
+- [ ] Image optimisation with Next.js `<Image />`
+- [ ] SEO meta tags and Open Graph support
+- [ ] Analytics integration
+
+---
+
+
