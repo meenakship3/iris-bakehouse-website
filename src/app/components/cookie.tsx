@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import Button from '@mui/material/Button';
+import Image from "next/image";
 
 interface CookieCardProps {
   imageUrl: string;
@@ -13,11 +14,16 @@ const CookieCard: React.FC<CookieCardProps> = ({ imageUrl, name, price, onAddToC
   return (
     <Card style={{ background: 'var(--lavender)' }} className="w-full md:max-w-xs mx-auto p-0 rounded-2xl border border-[var(--foreground)]">
       <CardContent className="flex flex-col items-center p-4 pt-0 pb-0 md:p-0">
-        <img
-          src={imageUrl}
-          alt={name}
-          className="w-full h-56 object-cover rounded-t-2xl mb-2"
-        />
+        <div className="relative w-full h-56 mb-2">
+          <Image
+            src={imageUrl}
+            alt={name}
+            fill
+            className="object-cover rounded-t-2xl"
+            sizes="(max-width: 768px) 100vw, 25vw"
+            priority={false}
+          />
+        </div>
         <CardTitle style={{fontFamily: "var(--font-oswald)", color: "var(--foreground)"}} className="text-2xl font-semibold mb-2 leading-tight">
           {name}
         </CardTitle>

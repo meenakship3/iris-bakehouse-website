@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function Landing() {
     return (
       <div
@@ -12,11 +14,15 @@ export default function Landing() {
           <div className="steam-wisp steam-wisp2"></div>
           <div className="steam-wisp steam-wisp3"></div>
         </div>
-        <img
-          src="/images/hero-v1-final.png"
-          alt="Iris Bakehouse Hero"
-          className="h-[50vh] w-full object-cover relative z-20"
-        />
+        <div className="relative w-full h-[50vh]">
+          <Image
+            src="/images/hero-v1-final.png"
+            alt="Iris Bakehouse Hero"
+            fill
+            className="object-cover relative z-20"
+            priority
+          />
+        </div>
         <div className="w-full flex justify-center mt-8 z-30 relative">
           <button
             className="px-8 py-3 rounded-full text-[var(--background)] mt-8 bg-[var(--foreground)] font-semibold text-lg shadow hover:opacity-90 transition"
