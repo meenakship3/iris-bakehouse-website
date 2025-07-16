@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
-import Button from '@mui/material/Button';
 import Image from "next/image";
 
 interface CookieCardProps {
