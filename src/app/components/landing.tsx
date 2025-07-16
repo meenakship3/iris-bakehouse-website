@@ -25,7 +25,7 @@ export default function Landing() {
         </div>
         <div className="w-full flex justify-center mt-8 z-30 relative">
           <button
-            className="px-8 py-3 rounded-full text-[var(--background)] mt-8 bg-[var(--foreground)] font-semibold text-lg shadow hover:opacity-90 transition"
+            className="px-8 py-3 rounded-full text-[var(--background)] mt-8 bg-[var(--foreground)] font-semibold text-lg shadow cursor-pointer hover:opacity-90 transition"
           >
             Order Now
           </button>

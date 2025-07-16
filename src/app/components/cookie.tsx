@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
+import { useCart } from "./CartContext";
 
 interface CookieCardProps {
   imageUrl: string;
@@ -9,7 +10,8 @@ interface CookieCardProps {
   onAddToCart?: () => void;
 }
 
-const CookieCard: React.FC<CookieCardProps> = ({ imageUrl, name, price, onAddToCart }) => {
+export default function CookieCard({ imageUrl, name, price, onAddToCart }: CookieCardProps) {
+  const { addToCart } = useCart();
   return (
     <Card style={{ background: 'var(--lavender)' }} className="w-full md:max-w-xs mx-auto p-0 rounded-2xl border border-[var(--foreground)]">
       <CardContent className="flex flex-col items-center p-4 pt-0 pb-0 md:p-0">
@@ -30,9 +32,9 @@ const CookieCard: React.FC<CookieCardProps> = ({ imageUrl, name, price, onAddToC
       </CardContent>
       <CardFooter className="flex justify-center border-0 pb-2 pt-0">
         <button
-          onClick={onAddToCart}
+          onClick={addToCart}
           style={{background: "var(--foreground)"}}
-          className="text-white rounded-full px-6 py-2 text-sm font-semibold"
+          className="text-white rounded-full px-6 py-2 text-sm font-semibold hover:opacity-90 transition cursor-pointer"
         >
           Add to Cart
         </button>
@@ -41,5 +43,4 @@ const CookieCard: React.FC<CookieCardProps> = ({ imageUrl, name, price, onAddToC
   );
 };
 
-export default CookieCard;
 

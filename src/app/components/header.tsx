@@ -2,12 +2,23 @@
 
 import React, { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
+import { styled } from '@mui/material/styles';
+import IconButton from '@mui/material/IconButton';
+import Badge, { badgeClasses } from '@mui/material/Badge';
 import { ShoppingBagOutlined } from "@mui/icons-material";
+import { useCart } from "./CartContext";
 
 interface NavLink {
   name: string;
   href: string;
 }
+
+const BagBadge = styled(Badge)`
+  & .${badgeClasses.badge} {
+    top: -12px;
+    right: -6px;
+  }
+`;
 
 const navLinks: NavLink[] = [
   { name: "ORDER", href: "#cookies" },
@@ -16,6 +27,7 @@ const navLinks: NavLink[] = [
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { cartCount } = useCart();
 
   return (
     <nav className="navbar">
@@ -44,7 +56,21 @@ export default function Header() {
 </svg>
       </div>
       <div className="right-group">
-        <ShoppingBagOutlined />
+        <IconButton>
+        <ShoppingBagOutlined sx={{ fontSize: 25, color: 'var(--foreground)' }} />
+        <BagBadge badgeContent={cartCount} overlap="circular" sx={{
+    '& .MuiBadge-badge': {
+      backgroundColor: 'var(--foreground)',
+      color: 'var(--lavender)',
+      top: -6,
+      right: 2,
+      fontSize: '0.75rem',   // smaller text
+      minWidth: 17,          // smaller width
+      height: 17,            // smaller height
+      padding: '0 4px',      // adjust horizontal padding
+    }
+  }} />
+    </IconButton>
       </div>
       <style jsx>{`
         .navbar {

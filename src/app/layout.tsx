@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Assistant, Mynerve, Oswald } from "next/font/google"
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import { CartProvider } from "./components/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,9 +48,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${assistant.variable} ${mynerve.variable} ${oswald.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <CartProvider>
+          <Header />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
