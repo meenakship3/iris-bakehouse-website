@@ -14,7 +14,7 @@ const navLinks: NavLink[] = [
   { name: "CONTACT US", href: "/contact" },
 ];
 
-const Header: React.FC = () => {
+export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -144,4 +144,3 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;

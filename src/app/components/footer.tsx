@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-const Footer = () => {
+export default function Footer() {
   return (
     <div className="relative mt-8">
       <Card className="horizontal-padding" alignWithHeader>
@@ -56,5 +56,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
 
