@@ -1,14 +1,15 @@
-# Iris Bakehouse Online Shop
+# Iris Bakehouse Website
 
 This is a mobile-first website designed to showcase our products and enable online ordering and local delivery. This project is a work in progress and is being built as the foundation for a real business I hope to launch in the future. 
 
 ## Screenshots
 
-<img width="2880" height="168" alt="Screenshot 2025-07-15 at 2 58 15_PM" src="https://github.com/user-attachments/assets/03090068-a5f0-4905-bd2d-b19930e3649c" />
+<img width="2880" height="1410" alt="Hero and header section" src="https://github.com/user-attachments/assets/34a87137-1997-45a9-adf6-d0a8f0e28287" />
 
-<img width="2880" height="1082" alt="Screenshot 2025-07-15 at 2 57 56_PM" src="https://github.com/user-attachments/assets/3888ca29-01fa-4ff6-9ab9-38a53b119804" />
 
-<img width="2880" height="428" alt="Screenshot 2025-07-15 at 2 57 01_PM" src="https://github.com/user-attachments/assets/23ecbf87-b476-4fda-bb39-2f0659fc8913" />
+<img width="2880" height="1082" alt="Product menu" src="https://github.com/user-attachments/assets/3888ca29-01fa-4ff6-9ab9-38a53b119804" />
+
+<img width="2880" height="428" alt="Footer" src="https://github.com/user-attachments/assets/23ecbf87-b476-4fda-bb39-2f0659fc8913" />
 
 ## Tech Stack
 
@@ -38,13 +39,12 @@ This is a mobile-first website designed to showcase our products and enable onli
 
 
 ## Roadmap
-
 - [ ] Contact page
 - [ ] Order/cart flow (mock/demo)
 - [ ] Accessibility improvements (semantic HTML, alt text, keyboard navigation)
 - [ ] Image optimisation with Next.js `<Image />`
 - [ ] SEO meta tags and Open Graph support
-- [ ] Analytics integration
 
-
-
+## Image Credits
+- Placeholder images from Canva
+- Hero image generated using Gemini
