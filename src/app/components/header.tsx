@@ -33,7 +33,7 @@ export default function Header() {
     <nav className="navbar">
       <div className="left-group">
         <button
-          className="hamburger"
+          className="hamburger transition-transform active:scale-95"
           aria-label="Toggle menu"
           onClick={() => setIsOpen(!isOpen)}
         >
@@ -45,7 +45,12 @@ export default function Header() {
         >
           {navLinks.map((link) => (
             <li key={link.name} onClick={() => setIsOpen(false)}>
-              <a href={link.href}>{link.name}</a>
+              <a
+                href={link.href}
+                className="inline-block cursor-pointer transition-transform duration-150 hover:scale-105 active:scale-95 focus:outline-none"
+              >
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
@@ -56,7 +61,13 @@ export default function Header() {
 </svg>
       </div>
       <div className="right-group">
-        <IconButton>
+        <IconButton sx={{
+    transition: 'transform 0.15s',
+    '&:hover': {
+      backgroundColor: 'transparent',
+      transform: 'scale(1.1)',
+    },
+  }}>
         <ShoppingBagOutlined sx={{ fontSize: 25, color: 'var(--foreground)' }} />
         <BagBadge badgeContent={cartCount} overlap="circular" sx={{
     '& .MuiBadge-badge': {

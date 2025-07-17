@@ -5,15 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { CartProvider } from "./components/CartContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const assistant = Assistant({
   variable: "--font-assistant",
@@ -46,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${assistant.variable} ${mynerve.variable} ${oswald.variable} antialiased`}
+        className={`${assistant.variable} ${mynerve.variable} ${oswald.variable} antialiased`}
       >
         <CartProvider>
           <Header />
