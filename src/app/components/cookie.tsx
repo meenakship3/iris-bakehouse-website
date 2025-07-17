@@ -10,7 +10,7 @@ interface CookieCardProps {
   onAddToCart?: () => void;
 }
 
-export default function CookieCard({ imageUrl, name, price, onAddToCart }: CookieCardProps) {
+export default function CookieCard({ imageUrl, name, price }: CookieCardProps) {
   const { addToCart } = useCart();
   return (
     <Card style={{ background: 'var(--lavender)' }} className="w-full md:max-w-xs mx-auto p-0 rounded-2xl border border-[var(--foreground)]">

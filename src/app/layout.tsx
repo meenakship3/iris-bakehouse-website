@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Assistant, Mynerve, Oswald } from "next/font/google";
+import { Assistant, Mynerve, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
